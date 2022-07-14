@@ -1,0 +1,8 @@
+use_frameworks!
+
+target 'DoKitSwiftDemo' do
+  pod 'DoraemonKit', :subspecs => ['Core'],  :path => '../../../', :configurations => ['Debug']
+  pod 'DoraemonKit', :subspecs => ['WithGPS'],  :path => '../../../', :configurations => ['Debug']
+  pod 'DoraemonKit', :subspecs => ['WithMLeaksFinder'],  :path => '../../../', :configurations => ['Debug']
+  pod 'AFNetworking'
+end
